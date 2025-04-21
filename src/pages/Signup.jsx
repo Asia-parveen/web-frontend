@@ -14,7 +14,7 @@ const Signup = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      await axios.post(`${myapiUrl}/api/auth/signup`, form);
+      await axios.post(`${ myapiUrl}/api/auth/signup`, form);
       alert("Signup successful");
       setForm({ name: "", email: "", password: "" });
       navigate("/login"); // ✅ Step 3: Redirect to Login
